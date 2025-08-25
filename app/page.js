@@ -17,14 +17,14 @@ export default function Page() {
     <main className="min-h-screen">
       <Navbar />
 
-      {/* Cover / Hero Section */}
-      <section className="relative overflow-hidden">
+      {/* Hero / Cover with heading and subheading */}
+      <section id="hero" className="relative overflow-hidden">
         <div className="max-w-6xl mx-auto px-6 pt-24 pb-16 md:pt-32 md:pb-24">
           <div className="grid md:grid-cols-2 gap-10 items-center">
             <div>
               <div className="skeuo-surface p-6 md:p-8">
-                <h1 className="text-4xl md:text-6xl font-semibold tracking-tight text-clay-900">Skeuomorphic Studio</h1>
-                <p className="mt-4 text-lg text-clay-700">Craft soft, tactile interfaces with realistic shadows and highlights. Explore an interactive gallery powered by a skeuomorphic aesthetic.</p>
+                <h1 className="text-4xl md:text-6xl font-semibold tracking-tight text-clay-900">Design that feels real</h1>
+                <p className="mt-3 md:mt-4 text-lg text-clay-700">A skeuomorphic interface with soft shadows, tactile elements, and layered depth. Explore the gallery and try the controls below.</p>
                 <div className="mt-6 flex items-center gap-4">
                   <a href="#showcase">
                     <SkeuoButton
@@ -93,7 +93,7 @@ export default function Page() {
           <div id="controls" className="skeuo-surface p-5 md:p-7 flex flex-col justify-between">
             <div>
               <h2 className="text-2xl md:text-3xl font-semibold text-clay-900">Control Panel</h2>
-              <p className="text-clay-700 mt-2">Tweak the tactile controls to experience soft shadows and realistic highlights.</p>
+              <p className="text-clay-700 mt-2">Adjust the tactile controls to experience soft shadows and realistic highlights.</p>
             </div>
 
             <div className="mt-6 grid gap-6">

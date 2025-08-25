@@ -10,9 +10,9 @@ export default function Navbar() {
             <span className="text-clay-900 font-semibold tracking-tight">Skeuomorphic Studio</span>
           </div>
           <div className="hidden md:flex items-center gap-6">
+            <a href="#hero" className="link">Home</a>
             <a href="#showcase" className="link">Gallery</a>
             <a href="#controls" className="link">Controls</a>
-            <a href="https://nextjs.org" target="_blank" rel="noreferrer" className="link">Docs</a>
           </div>
         </div>
       </div>
