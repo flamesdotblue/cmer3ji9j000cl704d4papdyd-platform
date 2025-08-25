@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-start: #eef2f8;
+  --bg-end: #dfe6f1;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: radial-gradient(1200px 600px at 20% -10%, #ffffff 0%, var(--bg-start) 40%, var(--bg-end) 100%);
+  color: #2a2e35;
+}
+
+.skeuo-surface {
+  background: linear-gradient(145deg, #eef2f8, #dfe6f1);
+  border-radius: 20px;
+  box-shadow: 8px 8px 16px #b0b6c5, -8px -8px 16px #ffffff;
+}
+
+.skeuo-inset {
+  background: linear-gradient(145deg, #eef2f8, #dfe6f1);
+  border-radius: 16px;
+  box-shadow: inset 8px 8px 16px #b0b6c5, inset -8px -8px 16px #ffffff;
+}
+
+.skeuo-pressable {
+  transition: transform 0.06s ease, box-shadow 0.06s ease, background 0.2s ease;
+}
+
+.skeuo-pressable:active {
+  transform: translateY(1px);
+  box-shadow: inset 6px 6px 12px #b0b6c5, inset -6px -6px 12px #ffffff;
+}
+
+.link {
+  @apply text-clay-700 underline decoration-clay-400 hover:text-clay-900;
+}
